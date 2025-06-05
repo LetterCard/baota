@@ -23,7 +23,7 @@ RUN mkdir -p /www/letsencrypt /www/init.d /www/wwwroot /run/sshd \
 ENV PANEL_PORT=8888
 
 # 复制本地脚本文件
-COPY ../../script/install_7.7.0_lite.sh /app/script/install_7.7.0_lite.sh
+COPY ../script/install_7.7.0_lite.sh /app/script/install_7.7.0_lite.sh
 RUN chmod +x /app/script/install_7.7.0_lite.sh
 
 # 安装 Python 包和宝塔面板
